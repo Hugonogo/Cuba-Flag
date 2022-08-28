@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuba</title>
+    <style>
+        *, *::before, *::after{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            align-items: center;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            background-color:aquamarine;
+        }
+        
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .band{
+            width: 600px;
+            height: 400px;
+            background-color: white;
+            display: flex;
+        }
+      
+        .tri{
+           position: absolute;
+            width: 0; 
+            height: 0; 
+            align-items: center;
+            border-top: 200px solid transparent;
+            border-bottom: 200px solid transparent;
+            border-left: 400px solid #d0142c;
+           
+        }
+        table{
+            height: 400px;
+            width: 1200px;
+
+        }
+        table, td{
+            border: 0.2px solid;
+            border-collapse: collapse;
+            
+
+        }
+        tr:nth-child(odd){
+            background-color: #002891; /* Comando para pintar a tabela pulando de um em um*/
+        }
+        
+        .star{
+            position: absolute;
+            font-size: 170px;
+            transform: translate(90px, 70px);
+            color: white;
+                        
+        }
+      
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        
+        <div class="band">
+            
+            <table>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+            </table>
+            <div class="tri"></div>
+            <div class="star">
+                <p>&starf;</p>
+            </div>
+            
+        </div>
+        
+        
+        
+    </div>
+</body>
+</html>
